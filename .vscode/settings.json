@@ -1,0 +1,15 @@
+{
+    "java.project.sourcePaths": [
+        "src",
+        "sound",
+        "control"
+    ],
+    "java.project.outputPath": "bin",
+    "java.project.referencedLibraries": [
+        "lib/**/*.jar",
+        "sqljdbc4.jar"
+    ],
+    "cSpell.words": [
+        "asdhfiuh"
+    ]
+}
