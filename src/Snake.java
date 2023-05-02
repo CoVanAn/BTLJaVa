@@ -31,7 +31,7 @@ public class Snake {
 
     // Nhận vector thay đổi
     public void setVector(int v) {
-        if ( changeVector)
+        if (vector != -v && changeVector)
             vector = v;
         changeVector = false;
     }
