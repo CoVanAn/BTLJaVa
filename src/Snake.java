@@ -80,14 +80,14 @@ public class Snake {
             GameScreen.LevelUpSound.play();
         }
         // Rắn cắn vào thân
-        // for (int i = 1; i < SLength; i++) {
-        //     if (x[0] == x[i] && y[0] == y[i]) {
-        //         GameScreen.OverSound.play();
-        //         GameScreen.isPlaying = false;
-        //         GameScreen.isGameOver = true;
-        //         SnakeEats.scores.add(new Score(String.valueOf(GameScreen.Score)));
-        //     }
-        // }
+        for (int i = 1; i < SLength; i++) {
+            if (x[0] == x[i] && y[0] == y[i]) {
+                GameScreen.OverSound.play();
+                GameScreen.isPlaying = false;
+                GameScreen.isGameOver = true;
+                SnakeEats.scores.add(new Score(String.valueOf(GameScreen.Score)));
+            }
+        }
         // Rắn ăn gach
         for (int i = 0; i < 20; i++)
             for (int j = 0; j < 20; j++) {
